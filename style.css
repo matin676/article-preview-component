@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-content {
+  display: flex;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-left {
+  width: 70%;
+  height: 16rem;
+  /* background-color: blueviolet; */
+}
+
+.container-img {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  margin: auto;
+}
+
+.container-img .left-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+}
+
+.container-right {
+  position: relative;
+  width: 30%;
+  background-color: white;
+  right: 24.2rem;
+  height: 16rem;
+  border-radius: 0 12px 12px 0;
+}
+
+.right-content {
+  width: 600px;
+  height: 300px;
+  padding: 2rem;
+}
+
+.heading {
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  width: 375px;
+}
+
+.para {
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(214, 17%, 51%);
+  width: 375px;
+  margin-top: 0.8rem;
+}
+
+.profile {
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.profile-right {
+  width: 30%;
+}
+
+.pic-con {
+  width: 50px;
+  height: 50px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-left {
+  width: 100%;
+  position: relative;
+  left: 1rem;
+}
+
+.name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+  font-size: 14px;
+}
+
+.share-btn {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 2rem;
+  top: 1rem;
+  right: 11rem;
+  background-color: rgb(236, 242, 248);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+svg {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 8px;
+  left: 8px;
+}
+
+.share-btn:hover {
+  cursor: pointer;
+  background-color: hsl(214, 17%, 51%);
+}
+
+svg:hover path {
+  fill: #ecf2f8;
+}
+
+.social-media {
+  background-color: rgb(72, 85, 106);
+  display: flex;
+  position: relative;
+  border-radius: 9px;
+  padding: 15px 30px;
+  bottom: 4.3rem;
+  right: 1.5rem;
+}
+
+#media:before {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 6.3rem;
+  width: 0;
+  height: 0;
+  border-top: 20px solid rgb(72, 85, 106);
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+
+.share,
+i {
+  padding: 0 10px;
+}
+
+.share {
+  color: rgb(236, 242, 248);
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  top: 1px;
+}
+
+i {
+  display: flex;
+  width: 2.5rem;
+}
+
+i img {
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  z-index: -999;
+  opacity: -1;
+}
+
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 8rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1350px) {
+  .container {
+    position: inherit;
+    font-size: 15px;
+  }
+  .container-content {
+    flex-direction: column;
+    position: absolute;
+    margin: 2rem;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-left,
+  .container-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-img {
+    width: 100%;
+  }
+  .container-img .left-img {
+    border-radius: 12px 12px 0 0;
+  }
+  .container-right {
+    border-radius: 0 0 12px 12px;
+  }
+  .right-content {
+    width: 100%;
+    height: 100%;
+  }
+  .heading,
+  .para,
+  .profile-right {
+    width: 100%;
+  }
+  .profile-left {
+    position: absolute;
+    left: 6rem;
+    bottom: 7rem;
+  }
+  .share-btn {
+    position: absolute;
+    right: 3rem;
+    top: 13rem;
+    width: 2rem;
+  }
+  .social-media {
+    display: flex;
+    position: absolute;
+    padding: 15px 30px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  #media:before {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+  .share {
+    font-size: 20px;
+  }
+  .share,
+  i {
+    margin: auto;
+  }
+  i{
+    margin: 10px 10px;
+    padding-top: 5px;
+  }
+  .attribution{
+    bottom: 0;
+  }
+}
