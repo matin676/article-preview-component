@@ -31,16 +31,16 @@ body {
 }
 
 .container-left {
-  width: 70%;
+  width: 50%;
   height: 16rem;
-  /* background-color: blueviolet; */
+  position: relative;
 }
 
 .container-img {
   position: relative;
   width: 300px;
   height: 100%;
-  margin: auto;
+  margin: auto 0 auto auto;
 }
 
 .container-img .left-img {
@@ -51,17 +51,16 @@ body {
 
 .container-right {
   position: relative;
-  width: 30%;
-  background-color: white;
-  right: 24.2rem;
-  height: 16rem;
-  border-radius: 0 12px 12px 0;
+  width: 50%;
+  height: 17rem;
+  transform: translateY(10px);
 }
 
 .right-content {
-  width: 600px;
-  height: 300px;
-  padding: 2rem;
+  background-color: white;
+  width: 500px;
+  padding: 1.5rem 1.6rem;
+  border-radius: 0 12px 12px 0;
 }
 
 .heading {
@@ -100,8 +99,8 @@ body {
 
 .profile-left {
   width: 100%;
-  position: relative;
-  left: 1rem;
+  position: absolute;
+  left: 5.5rem;
 }
 
 .name {
@@ -119,10 +118,10 @@ body {
   position: relative;
   border: none;
   border-radius: 50%;
-  width: 5.5rem;
+  width: 2rem;
   height: 2rem;
-  top: 1rem;
-  right: 11rem;
+  top: 0.5rem;
+  right: 3rem;
   background-color: rgb(236, 242, 248);
   transition: all 0.5s ease-in-out 0s;
 }
@@ -152,7 +151,7 @@ svg:hover path {
   border-radius: 9px;
   padding: 15px 30px;
   bottom: 4.3rem;
-  right: 1.5rem;
+  left: 6.2rem;
 }
 
 #media:before {
@@ -210,31 +209,22 @@ i img {
 }
 
 @media (max-width: 1350px) {
-  .container {
-    position: inherit;
-    font-size: 15px;
-  }
   .container-content {
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     margin: 2rem;
-    left: 0;
-    right: 0;
-    align-items: center;
-    justify-content: center;
   }
   .container-left,
   .container-right {
     width: 100%;
     height: 100%;
-    position: relative;
     margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
+  }
+  .container-left {
+    transform: translateY(10px);
+  }
+  .container-right {
+    height: 80%;
   }
   .container-img {
     width: 100%;
@@ -242,7 +232,7 @@ i img {
   .container-img .left-img {
     border-radius: 12px 12px 0 0;
   }
-  .container-right {
+  .right-content {
     border-radius: 0 0 12px 12px;
   }
   .right-content {
@@ -254,23 +244,16 @@ i img {
   .profile-right {
     width: 100%;
   }
-  .profile-left {
-    position: absolute;
-    left: 6rem;
-    bottom: 7rem;
-  }
-  .share-btn {
-    position: absolute;
-    right: 3rem;
-    top: 13rem;
-    width: 2rem;
+  .profile {
+    margin-top: 3rem;
   }
   .social-media {
     display: flex;
-    position: absolute;
     padding: 15px 30px;
-    bottom: 0;
+    position: absolute;
+    top: 21rem;
     left: 0;
+    bottom: 0;
     width: 100%;
   }
   #media:before {
@@ -285,11 +268,11 @@ i img {
   i {
     margin: auto;
   }
-  i{
+  i {
     margin: 10px 10px;
     padding-top: 5px;
   }
-  .attribution{
+  .attribution {
     bottom: 0;
   }
 }
