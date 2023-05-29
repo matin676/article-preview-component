@@ -195,20 +195,6 @@ i img {
   opacity: -1;
 }
 
-.attribution {
-  position: absolute;
-  font-size: 11px;
-  text-align: center;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 8rem;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 @media (max-width: 600px) {
   .container-content {
     flex-direction: column;
@@ -272,8 +258,5 @@ i img {
   i {
     margin: 10px 10px;
     padding-top: 5px;
-  }
-  .attribution {
-    bottom: 0;
   }
 }
